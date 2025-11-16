@@ -2,13 +2,13 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import './Hero.css';
 const Hero = () => {    
   const openPdf = () => {
-  window.open('../../../public/resume.pdf', "_blank");
+  window.open('/resume.pdf', "_blank");
 };
 
   return (
     <div id='home' className="hero">
       <div className='hero-img'>
-         <img  src="../../../public/final-hero.png" alt="" />
+         <img  src="/final-hero.png" alt="" />
       </div>
     
       <h1 className="hero-title"><span>I'm Jitendra Vishwakarma,</span> Mern Stack Developer.</h1>

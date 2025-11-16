@@ -7,7 +7,7 @@ const Footer = () => {
         <hr />
       <div className="footer-bottom">
         <div>
-        <img src="../../../public/logo.png" alt="Logo" className="footer-logo" />
+        <img src="/logo.png" alt="Logo" className="footer-logo" />
         <p className='footer-bottom-left'>Designed by Jitendra Vishwakarma</p>
         </div>
       </div>

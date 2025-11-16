@@ -13,10 +13,10 @@ const Navbar = () => {
   }
   return (
     <div className="navbar">
-     <img src="../../../public/logo.png" alt="Logo" className="navbar-logo" /> 
-     <img src="../../../public/menu-open.svg" onClick={openmenu} alt="Menu Icon" className="nav-mob-open" />
+     <img src="/logo.png" alt="Logo" className="navbar-logo" /> 
+     <img src="/menu-open.svg" onClick={openmenu} alt="Menu Icon" className="nav-mob-open" />
       <ul ref={menuref} className="nav-menu">
-        <img src="../../../public/menu-close.svg" onClick={closemenu} alt="" className="nav-mob-close" />
+        <img src="/menu-close.svg" onClick={closemenu} alt="" className="nav-mob-close" />
         <li> <AnchorLink className='anchor-link' href="#home"> <p className={`navbar-item ${menu === "home" ? "active": ""}`} onClick={() => setMenu("home")}>
           Home
           </p>
