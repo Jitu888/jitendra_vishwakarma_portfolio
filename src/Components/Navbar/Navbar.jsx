@@ -1,5 +1,5 @@
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import './Navbar.css';
+import './navbar.css';
 import React, { useState,useRef } from 'react';
 
 const Navbar = () => {
