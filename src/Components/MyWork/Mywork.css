@@ -1,0 +1,119 @@
+.mywork {     
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;  
+    gap: 80px;
+    margin: 80px 170px;  
+}
+
+.mywork-title {
+    position: relative;
+}
+
+.mywork-title h1 {
+    font-size: 80px;
+    font-weight: 600;
+    padding: 0 30px;
+}
+.mywork-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.mywork-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.mywork-container .mywork-format {
+    box-sizing: border-box;
+    width: 360px;
+    height: 280px;
+    transition: 0.3s;
+    cursor: pointer;
+    /* background-color: rgb(62, 62, 62); */
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.mywork-container .mywork-format:hover {
+    transform: scale(1.10);
+    border: 4px solid #ff00ff;
+    border-radius: 10px;
+    transition: 0.3s;
+    background: linear-gradient(264deg, #DA7C25 0.36%, #B923E1 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mywork-format h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    background: linear-gradient(264deg, #DA7C25 0.36%, #B923E1 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mywork-format span {
+    display: block;
+    margin: 20px;
+    font-size: 16px;
+    color: white;
+    line-height: 28px;
+}
+
+.mywork-showmore {
+    display: flex;
+    gap: 15px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    padding: 30px 60px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.mywork-showmore:hover {
+    transition: 0.6s;
+    gap:30px
+}
+
+@media(max-width: 768px) {
+    .mywork {
+        margin: 50px 50px;
+        gap: 50px;
+    }
+    .mywork-title h1 {
+        font-size: 50px;
+        padding: 0;
+    }
+    .mywork-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .mywork-container .mywork-format {
+        width: 100%;
+        height: auto;
+    }
+    .mywork-format h3 {
+        font-size: 24px;
+    }
+    .mywork-format span {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .mywork-showmore {
+        padding: 20px 40px;
+        font-size: 18px;
+    }
+}
